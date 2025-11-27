@@ -1,0 +1,10 @@
+h1 {
+    color:black;
+    margin-left: 10px;
+}
+
+.header {
+    overflow:hidden;
+    background-color: #ffb691;
+    padding: 20px 10px;
+}
