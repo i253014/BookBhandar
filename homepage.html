@@ -1,4 +1,10 @@
-<!DOCTYPE html>   
+<!DOCTYPE html>  
+
+<!--
+For header and footer, I initially spent my time trying to recreate them directly, however, after many issues, I resorted to a tutorial
+Which was mainly this youtube video: https://www.youtube.com/watch?v=yQimoqo0-7g 
+-->
+
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -9,27 +15,37 @@
         <div class="header">
             <img class="header-logo" src="images/website_icons/logo.png" alt="Logo">
             
+            <!--Forms are beautiful in grouping together related objects-->
             <form class="search-bar">
+
                 <img src="images/website_icons/search.png" alt="Search">
                 <input type="text" placeholder="Search | Books | Authors | Stores">
+
             </form>
 
             <div class="header-icons">
                 <img class="i1" src="images/website_icons/Shopping cart.png" alt="Cart">
-                <img class="i2" src="Images/website_icons/account_circle.png" alt="Account">        
+                
+                <a href="login_signup.html">
+                    <img class="i2" src="Images/website_icons/account_circle.png" alt="Account">        
+                </a>
+
             </div>
         </div> 
 
         <div class="navbar">
-            <a href="#" class="highlight">Home</a>
-            <a href="#" class="highlight">Our Collection</a>
-            <a href="#" class="highlight">Contact</a>
-            <a href="#" class="highlight">About Us</a>
-            <a href="#" class="highlight">My Wishlist</a>
+            <nav>
+                <a href="#" class="highlight">Home</a>
+                <a href="#" class="highlight">Our Collection</a>
+                <a href="#" class="highlight">Contact</a>
+                <a href="#" class="highlight">About Us</a>
+                <a href="#" class="highlight">My Wishlist</a>
+            </nav>
         </div>
 
         <div class="banner">
 
+            <!--This was the most difficult part of my homepage, the css was difficult-->
             <div class="banner-content">
                 <h3 class="banner-subtitle">Book Bhandar Special Offer</h3>
                 <h1 class="banner-title">NEW YEAR <br> SALE</h1>
@@ -43,12 +59,15 @@
 
         <h1 class="section-title">Featured Books</h1>
 
+        <!--I had to simplify my featured section becuase it was just too much to stick to the original design-->
         <div class="cards">
             <img src="Images/books/images 2.png" alt="Zulfi Bhutto">
             <img src="Images/books/9789699903878 1.png" alt="The Nine Lives">
             <img src="Images/books/53121520 1.png" alt="Crime and Punishment">
         </div>
 
+        <!--I also merged together the information on the homepage into the footer since I would have to create separate classes for it otherwise-->
+        <!--Footer was very arduous, however, once I stuck to the tutorial and used separate classes for columns, it was very simple-->
         <footer>
             <div class="footer-columns">
                 <div class="footer-col">
@@ -74,11 +93,13 @@
 
             <div class="footer-bottom">
                 <div class="footer-links">
-                    <a href="#">Terms and Conditions</a>
-                    <a href="#">FAQs</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Return Policy</a>
+                    <nav>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Return Policy</a>
+                    </nav>
                 </div>
                 
                 <div class="footer-contact">
