@@ -423,3 +423,70 @@ footer {
     font-weight: bold;
     color: #000;
 }
+
+/*This is mainly only for my product details page*/
+.detail-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px 10%;
+    flex-wrap: wrap; 
+}
+
+.detail-image img {
+    width: 300px;
+    height: auto;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.detail-info {
+    max-width: 500px;
+}
+
+.detail-info h1 {
+    margin-left: 0; 
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.detail-meta {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/*I havent put in read for stock status but for that I can always create a sub-class*/
+.stock-status {
+    color: green;
+    font-weight: bold;
+}
+
+.detail-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: justify;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    background: white;
+    border: 2px solid #2b2b2b;
+    color: #2b2b2b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #f0f0f0;
+}
