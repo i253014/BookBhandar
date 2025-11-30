@@ -1,11 +1,19 @@
+/*
+    Almost everything is flex because that accomodates for mobile view along with pc
+    I have mostly aligned everything to center as that looks best
+*/
+
 * {
+    /*Website does not have a global border so I remove the default margins and padding*/
     margin: 0;
     padding: 0;
+    /*This just ensures my boxes dont go weird due to padding*/
     box-sizing: border-box;
 }
 
 body {
     background-color: #f7eedc;
+    /*This font family is not the same as in Figma because figma has wierd fonts like Ag/subheading/light etc.*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -308,6 +316,7 @@ footer {
     gap: 15px;
 }
 
+/*For my google and facebook sign in*/
 .social-btn {
     display: flex;
     align-items: center;
@@ -350,6 +359,7 @@ footer {
     position: absolute;
     right: 15px; 
     top: 50%;
+    /*Transform is used here because for some reason the icon droops in the box*/
     transform: translateY(-50%);
     width: 24px; 
     height: auto;
@@ -359,4 +369,57 @@ footer {
 
 .password-toggle-icon:hover {
     opacity: 1;
+}
+
+/*Usefull for separating books from filters and creating division in collection webpage*/
+.filter-bar {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+.product-grid {
+    display: grid;
+    /*https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/*/
+    /*This obviously I took and integrated from online resources*/
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+    gap: 40px;
+    padding: 20px 5%;
+    margin-bottom: 50px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-card img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-author {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #000;
 }
