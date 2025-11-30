@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Book Bhandar</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+    <div class="header">
+        <img class="header-logo" src="images/website_icons/logo.png" alt="Logo">
+        
+        <form class="search-bar">
+            <img src="images/website_icons/search.png" alt="Search">
+            <input type="text" placeholder="Search | Books | Authors | Stores">
+        </form>
+
+        <div class="header-icons">
+            <img class="i1" src="images/website_icons/Shopping cart.png" alt="Cart">
+            <a href="login_signup.html">
+                <img class="i2" src="Images/website_icons/account_circle.png" alt="Account">     
+            </a>
+        </div>
+    </div>
+    
+    <div class="navbar">
+        <nav>
+            <a href="#" class="highlight">Home</a>
+            <a href="#" class="highlight">Our Collection</a>
+            <a href="#" class="highlight">Contact</a>
+            <a href="#" class="highlight">About Us</a>
+            <a href="#" class="highlight">My Wishlist</a>
+        </nav>
+    </div>
+
+    <main class="checkout-page">
+        
+        <section class="shipping-info-section">
+            <h1 class="page-title">Checkout</h1>
+            <h2 class="section-heading">Shipping Information</h2>
+
+            <form class="shipping-form">
+                <div class="form-group two-columns">
+                    <label for="first-name">First name <i class="fas fa-asterisk mandatory"></i></label>
+                    <input type="text" id="first-name">
+                </div>
+                <div class="form-group two-columns">
+                    <label for="last-name">Last name <i class="fas fa-asterisk mandatory"></i></label>
+                    <input type="text" id="last-name">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="street-address">Street Address <i class="fas fa-asterisk mandatory"></i></label>
+                    <input type="text" id="street-address">
+                </div>
+
+                <div class="form-group two-columns">
+                    <label for="area-sector">Area/Sector <i class="fas fa-asterisk mandatory"></i></label>
+                    <input type="text" id="area-sector">
+                </div>
+                <div class="form-group two-columns">
+                    <label for="landmark">Nearest landmark</label>
+                    <input type="text" id="landmark">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="phone">Phone <i class="fas fa-asterisk mandatory"></i></label>
+                    <input type="tel" id="phone">
+                </div>
+            </form>
+        </section>
+
+        <section class="order-details-section">
+            <h2 class="section-heading">Order details</h2>
+
+            <div class="order-item">
+                <div class="item-cover">
+                    <img src="crime.png" alt="Crime and Punishment Cover">
+                    <i class="fas fa-info-circle info-icon"></i>
+                </div>
+                <div class="item-details">
+                    <p class="title">Crime and Punishment</p>
+                    <p class="author">by Fyodor Dostoevsky</p>
+                </div>
+                <div class="item-price">Rs 1000</div>
+            </div>
+
+            <div class="discount-entry">
+                <input type="text" placeholder="Discount code">
+                <button>Apply</button>
+            </div>
+
+            <div class="price-summary">
+                <div class="summary-row"><span>Subtotal</span><span>Rs 1000</span></div>
+                <div class="summary-row"><span>Delivery charges</span><span>Rs 150</span></div>
+                <div class="summary-row"><span>Discount</span><span>-</span></div>
+                <div class="summary-row total-row"><span>Total</span><span>Rs 1150</span></div>
+            </div>
+
+            <div class="payment-method">
+                <h3>Choose your payment method</h3>
+                <div class="options-grid">
+                    <label class="radio-option"><input type="radio" name="payment" value="cash" checked> Cash</label>
+                    <label class="radio-option"><input type="radio" name="payment" value="bank"> Bank transfer</label>
+                    <label class="radio-option"><input type="radio" name="payment" value="visa"> Visa/Mastercard</label>
+                    <label class="radio-option"><input type="radio" name="payment" value="apple"> Apple Pay</label>
+                </div>
+            </div>
+
+            <button class="place-order-button">Place order</button>
+        </section>
+    </main>
+
+   <footer>
+          
+
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <nav>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Return Policy</a>
+                    </nav>
+                </div>
+                
+                <div class="footer-contact">
+                    <p>support@bookbhandar.com</p>
+                    <p>+92 3143962134</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
