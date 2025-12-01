@@ -1,0 +1,125 @@
+<!DOCTYPE html>   
+
+<!--
+Tutorial I used: https://www.youtube.com/watch?v=yVjh7zDhF9s&list=PL9bD98LkBR7P8MYh0RzNSHgeVNTA8g0nB&index=6
+-->
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Shopping Cart - Book Bhandar</title>
+    </head>
+    <body>
+
+        <div class="header">
+
+            <a href="homepage.html">
+                <img class="header-logo" src="images/website_icons/logo.png" alt="Logo">
+            </a>
+
+            <form class="search-bar">
+                <img src="images/website_icons/search.png">
+                <input type="text" placeholder="Search | Books | Authors | Stores">
+            </form>
+            <div class="header-icons">
+                <a href="shoppingcart.html"><img class="i1" src="images/website_icons/Shopping cart.png"></a>
+                <a href="login_signup.html"><img class="i2" src="Images/website_icons/account_circle.png"></a>
+            </div>
+            
+        </div>
+
+        <div class="navbar">
+            <a href="homepage.html" class="highlight">Home</a>
+            <a href="productlisting.html" class="highlight">Our Collection</a>
+            <a href="#" class="highlight">Contact</a>
+            <a href="#" class="highlight">About Us</a>
+            <a href="#" class="highlight">My Wishlist</a>
+        </div>
+
+        <h1 class="section-title">Shopping Cart</h1>
+
+        <div class="cart-header">
+            You have 1 book(s) in your shopping cart!
+        </div>
+
+        <div class="cart-container">
+            <div class="cart-item">
+                <div style="font-weight:bold; margin-right:20px; cursor:pointer;">X</div>
+                <img src="Images/books/9789699903878 1.png" alt="Book Cover">
+                <div class="cart-details">
+                    <h3>Crime and Punishment</h3>
+                    <p style="color:#666; font-size:14px;">by Fyodor Dostoevsky | Readings Classic | Old Books Collection</p>
+                    <p style="margin-top:10px;"><strong>Rs 1000</strong> | Qty: 1x</p>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>Rs 1000</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery charges</span>
+                    <span>Rs 150</span>
+                </div>
+                <div class="summary-row">
+                    <span>GST. </span>
+                    <span>Rs 100</span>
+                </div>
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <span>Rs 1250</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-actions">
+
+            <!--I couldn't get this text centered for secondary button, same for the product detail page-->
+            <a href="productlisting.html" class="btn-secondary">Continue Shopping</a>
+            <a href="#" class="mainbtn">Proceed to Checkout</a>
+
+        </div>
+
+        <footer>
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h3>Connecting Book Readers</h3>
+                    <p>From its inception in 2025, Book Bhandar has aimed to connect local readers and strengthen the sense of community.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>The People Behind this Idea</h3>
+                    <p>Book Bhandar is being run by members of the local community of readers here in Islamabad.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Refund Policy</h3>
+                    <p>We provide refunds for all books which arrive damaged more than their grading.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>6-7 Working Days Delivery</h3>
+                    <p>Working with carriers such as Leopard, we ensure delivery within 6-7 working days.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <nav>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Return Policy</a>
+                    </nav>
+                </div>
+                <div class="footer-contact">
+                    <p>support@bookbhandar.com</p>
+                    <p>+92 3143962134</p>
+                </div>
+            </div>
+        </footer>
+
+        <!--Javascript logs and alerts-->
+        <script src="script.js"></script
+
+    </body>
+</html>

@@ -1,0 +1,720 @@
+/*
+    Almost everything is flex because that accomodates for mobile view along with pc
+    I have mostly aligned everything to center as that looks best
+*/
+
+* {
+    /*Website does not have a global border so I remove the default margins and padding*/
+    margin: 0;
+    padding: 0;
+    /*This just ensures my boxes dont go weird due to padding*/
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7eedc;
+    /*This font family is not the same as in Figma because figma has wierd fonts like Ag/subheading/light etc.*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: auto; 
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #ffb691; 
+    padding: 20px 5%;
+}
+
+.header-logo {
+    width: 150px;
+    height: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    padding: 5px;
+    width: 40%;
+    border: 3px solid #BCBCBC;
+}
+
+.search-bar img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.highlight {
+    color: black;
+    margin: 0 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.highlight:hover {
+    color: #ea5c5c;
+}
+
+.banner {
+    background-image: url(Images/homepage_01.jpeg);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    overflow: hidden;
+}
+
+.banner-content {
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.banner-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-subtitle {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.banner-offer {
+    border: 1px solid white;
+    padding: 10px 40px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.banner-desc {
+    font-size: 16px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainbtn {
+    background: #000000;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0 20px 0;
+    color: #333;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 5%;
+    flex-wrap: wrap;
+}
+
+.cards img {
+    height: 300px;
+    width: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.cards img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: white;
+    padding: 50px 5%;
+    margin-top: 50px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.footer-col p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.footer-contact {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 40px 20px;
+}
+
+.login-container {
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    text-align: center;
+}
+
+.login-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid #BCBCBC; 
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #ea5c5c;
+}
+
+.login-btn {
+    width: 100%;
+    background: #2b2b2b; 
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background: #000;
+}
+
+.seller-link {
+    display: block;
+    margin-top: 15px;
+    color: #2b2b2b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.social-divider {
+    margin: 30px 0;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*For my google and facebook sign in*/
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #BCBCBC;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    gap: 10px; 
+}
+
+.social-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.password-input-container {
+    position: relative; 
+    width: 100%;
+}
+
+.password-input-container input {
+    padding-right: 45px;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    right: 15px; 
+    top: 50%;
+    /*Transform is used here because for some reason the icon droops in the box*/
+    transform: translateY(-50%);
+    width: 24px; 
+    height: auto;
+    cursor: pointer; 
+    opacity: 0.6; 
+}
+
+.password-toggle-icon:hover {
+    opacity: 1;
+}
+
+/*Usefull for separating books from filters and creating division in collection webpage*/
+.filter-bar {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+.product-grid {
+    display: grid;
+    /*https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/*/
+    /*I took and integrated from online resources*/
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+    gap: 40px;
+    padding: 20px 5%;
+    margin-bottom: 50px;
+}
+
+/*This is the product card which was a great help for sorting out the productlisting pages*/
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-card img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-author {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #000;
+}
+
+/*This is mainly only for my product details page*/
+.detail-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px 10%;
+    flex-wrap: wrap; 
+}
+
+.detail-image img {
+    width: 300px;
+    height: auto;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+.detail-info {
+    max-width: 500px;
+}
+
+.detail-info h1 {
+    margin-left: 0; 
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.detail-meta {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/*I havent put in red for stock status but for that I can always create a sub-class*/
+.stock-status {
+    color: green;
+    font-weight: bold;
+}
+
+.detail-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: justify;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/*This is the css which I couldn't get text centered in*/
+.btn-secondary {
+    background: white;
+    border: 2px solid #2b2b2b;
+    color: #2b2b2b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #f0f0f0;
+}
+
+/*Last bit of CSS for first pages*/
+.cart-header {
+    background-color: #fcebeb; 
+    color: #d9534f;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #d9534f;
+    margin: 20px 5%;
+    border-radius: 5px;
+}
+
+.cart-container {
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.cart-details {
+    flex-grow: 1;
+}
+
+.cart-summary {
+    align-self: flex-end;
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total-row {
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.checkout-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 20px 5%;
+}
+
+/* --- SELLER PORTAL STYLES --- */
+
+.dashboard-container {
+    padding: 40px 5%;
+    min-height: 600px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.dashboard-stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ea5c5c;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* List of Seller's Books */
+.seller-inventory-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Reusing the look of the 'cart-item' but adapted for seller management */
+.inventory-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.2s;
+}
+
+.inventory-item:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.inventory-item img {
+    width: 60px;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 1px solid #eee;
+}
+
+.inventory-details {
+    flex-grow: 1;
+}
+
+.inventory-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.inventory-meta {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.inventory-status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.status-active {
+    background-color: #e6f9e6;
+    color: #28a745;
+}
+
+.inventory-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Action Buttons */
+.btn-small {
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-edit {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.btn-edit:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-delete {
+    background-color: #fff1f1;
+    color: #dc3545;
+    border: 1px solid #ffcccc;
+}
+
+.btn-delete:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-add-listing {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-add-listing:hover {
+    background-color: #000;
+}
