@@ -17,7 +17,7 @@ I have used this tutorial for this webpage: https://www.youtube.com/watch?v=99mu
             <!--Forms are beautiful in grouping together related objects-->
             <form class="search-bar">
 
-                <img src="images/website_icons/search.png" alt="Search">
+                <img src="images/website_icons/search.png" alt="Search" onclick="logSearch()" style="cursor:pointer;">
                 <input type="text" placeholder="Search | Books | Authors | Stores">
 
             </form>
@@ -62,7 +62,7 @@ I have used this tutorial for this webpage: https://www.youtube.com/watch?v=99mu
                 <!--For my buttons, I couldn't stack them like in figma-->
                 <div class="action-buttons">
                     <button class="btn-secondary">Like</button>
-                    <a href="#" class="mainbtn">Add to Cart</a>
+                    <a href="#" class="mainbtn" onclick="alertCart()">Add to Cart</a>
                     <button class="btn-secondary">Add to Wishlist</button>
                 </div>
 

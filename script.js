@@ -1,61 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*3 alerts*/
 
-    /*
-    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
-    https://developer.mozilla.org/en-US/docs/Glossary/DOM
-    */
+function alertCart() {
+    // Used on Product Detail Page
+    alert("Success! The book has been added to your cart.");
+}
 
-    /*3 console logs*/
+function alertLogin() {
+    // Used on Login Page
+    alert("Please enter a valid email address.");
+}
 
-    //Log when the Search icon is clicked
-    let searchIcon = document.querySelector('.search-bar img');
-    if (searchIcon) {
-        searchIcon.addEventListener('click', () => {
-            console.log("Search icon clicked. Query processing...");
-        });
-    }
+function alertRemove() {
+    // Used on Seller Portal
+    // confirm() returns true if user clicks OK, false if Cancel
+    return confirm("Are you sure you want to remove this listing?");
+}
 
-    //Log when a Filter is clicked (Collection Page)
-    let filterBar = document.querySelector('.filter-bar');
-    if (filterBar) {
-        filterBar.addEventListener('click', () => {
-            console.log("User interacted with the filter bar.");
-        });
-    }
 
-    //Log when the Cart page is opened
-    /*I used total-row here because it only exists in shopping cart page, hence once it is opened it logs*/
-    let shoppingCart = document.querySelector('.total-row');
-    if (shoppingCart) {
-        console.log("Going to shopping cart, calculating total...");
-    }
+/*3 logs*/
 
-    /*3 alerts*/
+function logSearch() {
+    // Used on Search Bar (All pages)
+    console.log("Search initiated by user.");
+}
 
-    //Alert when "Add to Cart" is clicked (Product Detail Page)
-    const addToCartBtn = document.querySelector('.detail-info .mainbtn');
-    if (addToCartBtn) {
-        addToCartBtn.addEventListener('click', (e) => {
-            e.preventDefault(); // Stops the link from jumping
-            alert("Item added to cart!");
-        });
-    }
+function logFilter() {
+    // Used on Collection Page
+    console.log("Filter options clicked.");
+}
 
-    //Alert when Login is clicked (Login Page)
-    const loginBtn = document.querySelector('.login-btn');
-    if (loginBtn) {
-        loginBtn.addEventListener('click', (e) => {
-            e.preventDefault(); 
-            alert("Please enter a valid email and password.");
-        });
-    }
-
-    //Alert when "Remove" is clicked (Seller Portal)
-    const deleteButtons = document.querySelectorAll('.btn-delete');
-    deleteButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            alert("Are you sure you want to remove this listing?");
-        });
-    });
-
-});
+function logCartPage() {
+    // Used on Shopping Cart Page load
+    console.log("Cart Page Loaded. Calculating total...");
+}

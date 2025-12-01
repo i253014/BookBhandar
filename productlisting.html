@@ -19,7 +19,7 @@ I used mainly this tutorial for this webpage: https://www.youtube.com/watch?v=Zb
             <!--Forms are beautiful in grouping together related objects-->
             <form class="search-bar">
 
-                <img src="images/website_icons/search.png" alt="Search">
+                <img src="images/website_icons/search.png" alt="Search" onclick="logSearch()" style="cursor:pointer;">
                 <input type="text" placeholder="Search | Books | Authors | Stores">
 
             </form>
@@ -48,7 +48,7 @@ I used mainly this tutorial for this webpage: https://www.youtube.com/watch?v=Zb
         <h1 class="section-title">Our Collection</h1>
         
         <!--I have centered filters and title for better design flow-->
-        <div class="filter-bar">
+        <div class="filter-bar" onclick="logFilter()">
             Filter by: 
             <a href="#">Bookshop</a> | <a href="#">Price</a> | <a href="#">Grade</a> | <a href="#">Category</a> | <a href="#">Author</a>
         </div>
