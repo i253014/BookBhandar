@@ -1,4 +1,4 @@
-
+/*by Azhar Hussein*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -91,6 +91,8 @@ body {
 .highlight:hover {
     color: #ea5c5c;
 }
+
+/**/
 
 .checkout-container {
     width: 85%;
