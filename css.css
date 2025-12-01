@@ -325,3 +325,161 @@ footer {
     font-size: 14px;
     color: #555;
 }
+
+.about-container {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px 50px;
+    background-color: #f8f6f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.about-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #38321e;
+    font-size: 2.5em;
+}
+.about-section {
+    margin-bottom: 40px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.about-section:last-child {
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+.about-section h2 {
+    font-size: 1.8em;
+    color: #ffb691;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.story-and-images {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.story-text-container {
+    flex: 2; 
+}
+
+.story-segment {
+    margin-bottom: 45px; 
+}
+
+.story-segment h2 {
+    text-align: left; 
+}
+
+.story-image-stack {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.office-image img {
+    max-width: 250px;
+    height: 150px;
+}
+.team-summary {
+    max-width: 250px; 
+    margin-top: 10px;
+}
+.team-summary h2 {
+    font-size: 1.2em; 
+    margin-bottom: 10px;
+    color: #38321e;
+    text-align: center;
+}
+.team-summary p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+
+.content-text {
+    line-height: 1.7;
+    color: #333;
+}
+.content-image img {
+    width: 100%;
+    max-width: 250px; 
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.team-member p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.achievements-section {
+    border-bottom: 1px solid #ddd;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.achievement-item {
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.achievement-item h3 {
+    font-size: 2.2em;
+    color: #38321e;
+    margin-bottom: 5px;
+}
+.achievement-item p {
+    font-size: 0.9em;
+    color: #777;
+}
+@media (max-width: 768px) {
+    .about-container {
+        width: 95%;
+        padding: 20px;
+    }
+    .about-title {
+        font-size: 2em;
+    }
+        .story-and-images {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .story-image-stack {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .achievement-item {
+        flex: auto;
+    }
+}
