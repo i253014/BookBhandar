@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    /*
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+    https://developer.mozilla.org/en-US/docs/Glossary/DOM
+    */
+
     /*3 console logs*/
-    /*https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference*/
 
     //Log when the Search icon is clicked
     let searchIcon = document.querySelector('.search-bar img');
